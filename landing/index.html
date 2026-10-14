@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlmaCode — студия разработки полного цикла</title>
+  <meta name="description" content="AlmaCode — студия разработки полного цикла. Веб, мобайл, десктоп, боты и серверы. Один контакт, без посредников.">
+  <meta name="theme-color" content="#F4F1EA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="#top">AlmaCode</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <h1 class="hero__title" id="hero-title">
+          <span class="line">Один контакт.</span>
+          <span class="line"><em class="serif">Любая платформа.</em></span>
+          <span class="line">Ноль воды.</span>
+        </h1>
+        <p class="hero__lead">AlmaCode — студия разработки полного цикла. Веб, мобайл, десктоп, боты и серверы — без агентств-прослоек, без менеджмента, без посредников.</p>
+        <div class="hero__actions">
+          <a class="btn" href="#contact">
+            <span>Обсудить проект</span>
+            <span class="btn__badge" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </span>
+          </a>
+          <a class="link-underline" href="#services">Что я делаю ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <p class="label">— Услуги</p>
+        <h2 class="section-title" id="services-title">
+          <span>Что я </span><em class="serif">делаю.</em>
+        </h2>
+        <ul class="services__grid">
+          <li class="service">
+            <h3>Веб</h3>
+            <p>Сайты, лендинги и веб-приложения — от макета до продакшена.</p>
+          </li>
+          <li class="service">
+            <h3>Мобайл</h3>
+            <p>iOS- и Android-приложения, включая Telegram Mini Apps.</p>
+          </li>
+          <li class="service">
+            <h3>Десктоп</h3>
+            <p>Кроссплатформенные приложения для Windows, macOS и Linux.</p>
+          </li>
+          <li class="service">
+            <h3>Боты и серверы</h3>
+            <p>Telegram-боты, интеграции и стабильная серверная часть.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="label">— Контакт</p>
+        <h2 class="section-title" id="contact-title">
+          <span class="line">Опиши задачу,</span>
+          <span class="line serif">я отвечу за пару часов.</span>
+        </h2>
+
+        <div class="panel">
+          <form id="contact-form" novalidate>
+            <div class="chips-row">
+              <span class="field-label" id="category-label">Мне нужен</span>
+              <div class="chips" role="radiogroup" aria-labelledby="category-label">
+                <label class="chip">
+                  <input type="radio" name="category" value="сайт" checked>
+                  <span>сайт</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="category" value="моб. апп">
+                  <span>моб. апп</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="category" value="десктоп">
+                  <span>десктоп</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="category" value="бот">
+                  <span>бот</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="category" value="сервер">
+                  <span>сервер</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="category" value="своё">
+                  <span>своё</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="name">Имя</label>
+                <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error">
+                <p class="error" id="name-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="contact">Email или @telegram</label>
+                <input id="contact" name="contact" type="text" autocomplete="email" aria-describedby="contact-error">
+                <p class="error" id="contact-error" hidden></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="task">Опиши задачу. Сроки, бюджет — если знаешь.</label>
+              <textarea id="task" name="task" rows="4"></textarea>
+            </div>
+
+            <button class="btn" type="submit">
+              <span>Отправить заявку</span>
+              <span class="btn__badge" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              </span>
+            </button>
+          </form>
+
+          <p class="success" id="form-success" role="status" hidden>Заявка принята. Ответим за пару часов.</p>
+        </div>
+
+        <p class="direct">Или напрямую: <a href="mailto:vueko.eruko@gmail.com">vueko.eruko@gmail.com</a> · <a href="https://t.me/vuek0">@vuek0</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
